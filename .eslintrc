@@ -1,0 +1,143 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "plugins": ["react", "jsx-a11y", "prettier", "@typescript-eslint", "import", "promise"],
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "standard",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "quotes": "off",
+    "no-console": [
+      "error",
+      {
+        "allow": ["error"]
+      }
+    ],
+    "no-useless-constructor": "off",
+    "no-duplicate-imports": "error",
+    "no-magic-numbers": "off",
+    "no-param-reassign": "warn",
+    "no-else-return": "warn",
+    "no-multi-assign": "warn",
+    "no-implicit-coercion": [2, { "allow": ["!!", "~"] } ],
+    "no-case-declarations": "warn",
+    "no-nested-ternary": "error",
+    "prefer-destructuring": "warn",
+    "prefer-template": "warn",
+    "prefer-rest-params": "warn",
+    "prettier/prettier": "error",
+    "react/prop-types": "off",
+    "react/no-string-refs": "error",
+    "react/self-closing-comp": "error",
+    "react/no-array-index-key": "error",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-boolean-value": "error",
+    "jsx-a11y/alt-text": "warn",
+    "jsx-a11y/img-redundant-alt": "warn",
+    "jsx-a11y/no-access-key": "warn",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.[jt]s",
+          "**/*.spec.[jt]s",
+          "**/*.test.[jt]sx",
+          "**/*.spec.[jt]sx",
+          "**/webpack.*.js"
+        ]
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "external", "internal", [
+            "sibling", "parent", "index"
+          ]],
+        "newlines-between": "always"
+      }
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never",
+        "js": "never",
+        "jsx": "never"
+      }
+    ],
+    "@typescript-eslint/no-magic-numbers": ["error", { "ignoreEnums": true }],
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-useless-constructor": "warn",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "interface",
+        "format": ["PascalCase"],
+        "custom": {
+          "regex": "^I[A-Z]",
+          "match": true
+        }
+      },
+      {
+        "selector": ["enum", "enumMember"],
+        "format": ["PascalCase"]
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": [2, { "argsIgnorePattern": "^_" }],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always", "prev": "*", "next": "block-like"
+      },
+      {
+        "blankLine": "always", "prev": "block-like", "next": "*"
+      },
+      {
+        "blankLine": "always", "prev": "*", "next": "return"
+      }
+    ]
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true,
+        "project": "."
+      }
+    },
+    "react": {
+      "version": "detect"
+    }
+  }
+}
