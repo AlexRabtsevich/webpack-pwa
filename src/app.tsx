@@ -1,8 +1,8 @@
 import { Space, Layout, Divider, Typography } from 'antd';
-import './app.css';
 
 import { AddTask, Task } from './components';
 import { useTasks } from './hooks';
+import './app.css';
 
 const { Content } = Layout;
 

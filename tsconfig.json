@@ -2,11 +2,17 @@
   "compilerOptions": {
     "outDir": "./dist/",
     "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
     "module": "esnext",
     "target": "esnext",
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
-    "baseUrl": "."
-  }
+    "baseUrl": ".",
+    "lib": ["dom", "esnext"],
+    "typeRoots": ["node_modules/@types"]
+  },
+  "exclude": ["spec", "/dist"],
+  "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
 }

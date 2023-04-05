@@ -61,7 +61,8 @@
           "**/*.spec.[jt]s",
           "**/*.test.[jt]sx",
           "**/*.spec.[jt]sx",
-          "**/webpack.*.js"
+          "**/webpack.*.js",
+          "**/setup-test-env.[jt]s"
         ]
       }
     ],

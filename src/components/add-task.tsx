@@ -13,7 +13,7 @@ export const AddTask: FC<IProps> = ({ onAdd }) => {
   return (
     <>
       <Button type="primary" ghost onClick={() => setIsOpen(true)}>
-        Add task
+        Add Task
       </Button>
       <Modal
         title="Add new task"
