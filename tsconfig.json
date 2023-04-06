@@ -11,8 +11,9 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "lib": ["dom", "esnext"],
-    "typeRoots": ["node_modules/@types"]
+    "typeRoots": ["node_modules/@types"],
+    "skipLibCheck": true
   },
-  "exclude": ["spec", "/dist"],
+  "exclude": ["spec", "/dist", "node_modules"],
   "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
 }

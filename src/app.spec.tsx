@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { App } from './app';
 
 describe('App', () => {
-  it('should render app component', async () => {
+  it('should render App component', async () => {
     render(<App />);
 
     expect(await screen.findByText('Webpack PWA: Todo List')).toBeInTheDocument();
