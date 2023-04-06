@@ -20,12 +20,12 @@ const menuItems = [
     label: 'Change Status to Pending',
   },
   {
-    key: TaskStatus.InProgress,
-    label: 'Change Status to In Progress',
-  },
-  {
     key: TaskStatus.Success,
     label: 'Change Status to Success',
+  },
+  {
+    key: TaskStatus.InProgress,
+    label: 'Change Status to In Progress',
   },
 ];
 
