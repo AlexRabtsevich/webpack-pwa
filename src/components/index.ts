@@ -1,2 +1,2 @@
-export { Task } from './task';
 export { AddTask } from './add-task';
+export { Task } from './task';
