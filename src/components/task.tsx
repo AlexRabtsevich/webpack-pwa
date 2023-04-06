@@ -1,6 +1,6 @@
 import { FC } from 'react';
-import { Alert, Dropdown } from 'antd';
 import { MoreOutlined } from '@ant-design/icons';
+import { Alert, Dropdown } from 'antd';
 
 import { ITask, TaskStatus } from '../types';
 
